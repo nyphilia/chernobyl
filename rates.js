@@ -30,7 +30,7 @@ class Rate
         this.lineY2 = this.posY + this.mappedValue / 2;
         this.stroke = 1;
         this.strokeAlpha = 255;
-        this.fillAlpha = 50;
+        this.fillAlpha = 80;
         this.fillColor1 = color(255, 0, 255, this.fillAlpha);
         this.fillColor2 = color(255, 0, 200, this.fillAlpha);
         this.fillColor3 = color(255, 255, 255, this.fillAlpha);
@@ -50,7 +50,7 @@ class Rate
             {
                 // stroke(this.strokeColor1);
                 // fill(this.fillColor1);
-                stroke(0, 25, 242, this.strokeAlpha);
+                stroke(0, 25, 255, this.strokeAlpha);
             }
             else if (this.country == 2)
             {
@@ -62,7 +62,7 @@ class Rate
             {
                 // stroke(this.strokeColor3);
                 // // fill(this.fillColor3);
-                stroke(0, 25, 242, this.strokeAlpha);
+                stroke(0, 25, 255, this.strokeAlpha);
             }
 
             strokeWeight(this.stroke);
@@ -71,17 +71,17 @@ class Rate
             if (this.country == 1)
             {
                 // fill(this.fillColor1);
-                fill(0, 25, 242, this.fillAlpha);
+                fill(0, 25, 255, this.fillAlpha);
             }
             else if (this.country == 2)
             {
                 // fill(this.fillColor2);
-                fill(0, 25, 242, this.fillAlpha);
+                fill(0, 25, 255, this.fillAlpha);
             }
             else if (this.country == 3)
             {
                 // fill(this.fillColor3);
-                fill(0, 25, 242, this.fillAlpha);
+                fill(0, 25, 255, this.fillAlpha);
             }
 
             quad(this.previousX, this.posY, this.previousX, this.posY - this.previousMappedValue, this.posX, this.posY - this.mappedValue, this.posX, this.posY);
@@ -91,13 +91,13 @@ class Rate
 
             if (mouseY > radiationPosY && mouseX > this.previousX && mouseX < this.posX)
             {
-                stroke(0, 25, 242);
+                stroke(0, 25, 255);
                 strokeWeight(1);
                 line(this.posX, height / 4 * 3, this.posX, height);
                 // line(this.posX, height/4, this.posX, this.posY);
                 strokeWeight(10);
                 stroke('black');
-                fill(0, 25, 242);
+                fill(0, 100, 255);
                 textSize(valueSize);
                 
                 if (this.country == 1)
@@ -106,11 +106,11 @@ class Rate
                 }
                 else if (this.country == 2)
                 {
-                    text("Lithuania: " + this.value, this.posX, height / 4 * 3 - lineSpace);
+                    text("Litauen: " + this.value, this.posX, height / 4 * 3 - lineSpace);
                 }
                 else if (this.country == 3)
                 {
-                    text("Latvia: " + this.value, this.posX, height / 4 * 3);
+                    text("Lettland: " + this.value, this.posX, height / 4 * 3);
                 }
             }
 

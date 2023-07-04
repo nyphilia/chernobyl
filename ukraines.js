@@ -138,35 +138,35 @@ class Ukraine
         {
             noStroke();
             fill(255, 20, 1, 200);
-            quad(this.previousX, this.clickedPosY - this.previousCs137M3Clicked, this.previousX, this.clickedPosY + this.previousCs137M3Clicked,
-                this.posX, this.clickedPosY + this.cs137M3Clicked, this.posX, this.clickedPosY - this.cs137M3Clicked);
+            quad(this.previousX, this.clickedPosY - this.previousCs137M3Clicked, this.previousX, this.clickedPosY,
+                this.posX, this.clickedPosY, this.posX, this.clickedPosY - this.cs137M3Clicked);
 
             strokeWeight(1);
             stroke(255, 20, 1);
 
             // stroke(255, 255, 255, 150);    
-            line(this.previousX, this.clickedPosY - this.previousMicroRoentgenPerHour, this.posX, this.clickedPosY - this.microRoentgenPerHour);
+            // line(this.previousX, this.clickedPosY - this.previousMicroRoentgenPerHour, this.posX, this.clickedPosY - this.microRoentgenPerHour);
             line(this.previousX, this.clickedPosY + this.previousMicroRoentgenPerHour, this.posX, this.clickedPosY + this.microRoentgenPerHour);
             stroke(255, 20, 1);
 
 
             line(this.previousX, this.clickedPosY - this.previousCs137M3Clicked, this.posX, this.clickedPosY - this.cs137M3Clicked);
-            line(this.previousX, this.clickedPosY + this.previousCs137M3Clicked, this.posX, this.clickedPosY + this.cs137M3Clicked);
+            // line(this.previousX, this.clickedPosY + this.previousCs137M3Clicked, this.posX, this.clickedPosY + this.cs137M3Clicked);
 
             line(this.previousX, this.clickedPosY - this.previousMappedBetaM3, this.posX, this.clickedPosY - this.mappedBetaM3);
-            line(this.previousX, this.clickedPosY + this.previousMappedBetaM3, this.posX, this.clickedPosY + this.mappedBetaM3);
+            // line(this.previousX, this.clickedPosY + this.previousMappedBetaM3, this.posX, this.clickedPosY + this.mappedBetaM3);
 
-            line(this.previousX, this.clickedPosY + this.previousMappedStr90M3, this.posX, this.clickedPosY + this.mappedStr90M3);
+            // line(this.previousX, this.clickedPosY + this.previousMappedStr90M3, this.posX, this.clickedPosY + this.mappedStr90M3);
             line(this.previousX, this.clickedPosY - this.previousMappedStr90M3, this.posX, this.clickedPosY - this.mappedStr90M3);
-
+// 
             // stroke(0, 25, 242, 200);
-            line(this.previousX, this.clickedPosY - this.previousMappedBetaM2, this.posX, this.clickedPosY - this.mappedBetaM2);
+            // line(this.previousX, this.clickedPosY - this.previousMappedBetaM2, this.posX, this.clickedPosY - this.mappedBetaM2);
             line(this.previousX, this.clickedPosY + this.previousMappedBetaM2, this.posX, this.clickedPosY + this.mappedBetaM2);
 
-            line(this.previousX, this.clickedPosY - this.previousMappedCs137M2, this.posX, this.clickedPosY - this.mappedCs137M2);
+            // line(this.previousX, this.clickedPosY - this.previousMappedCs137M2, this.posX, this.clickedPosY - this.mappedCs137M2);
             line(this.previousX, this.clickedPosY + this.previousMappedCs137M2, this.posX, this.clickedPosY + this.mappedCs137M2);
 
-            line(this.previousX, this.clickedPosY - this.previousMappedStr90M2, this.posX, this.clickedPosY - this.mappedStr90M2);
+            // line(this.previousX, this.clickedPosY - this.previousMappedStr90M2, this.posX, this.clickedPosY - this.mappedStr90M2);
 
             line(this.previousX, this.clickedPosY + this.previousMappedStr90M2, this.posX, this.clickedPosY + this.mappedStr90M2);
 
@@ -177,8 +177,8 @@ class Ukraine
             {
                 push();
                 stroke(255, 20, 1, 150);
-                line(this.posX, this.clickedPosY, this.posX, this.posY / 2);
-                line(this.posX, this.clickedPosY, this.posX, this.posY / 2 * 3);
+                line(this.posX, this.clickedPosY, this.posX, this.posY / 2+50);
+                line(this.posX, this.clickedPosY, this.posX, this.posY / 2 * 3-50);
                 noStroke();
                 fill(255, 20, 1, 255);
                 // fill(255, 255, 255, 255);
@@ -187,17 +187,18 @@ class Ukraine
 
                 //M3
                 textAlign(LEFT, CENTER);
-                text("Cs137: " + this.cs137M3Clicked.toFixed(1), this.posX, this.posY / 2);
-                text("Beta: " + this.mappedBetaM3.toFixed(1), this.posX, this.posY / 2 + lineSpace);
-                text("Str90: " + this.mappedStr90M3.toFixed(1), this.posX, this.posY / 2 + lineSpace * 2);
+                text("Cs137: " + this.cs137M3Clicked.toFixed(1), this.posX, this.posY / 2 + lineSpace * 2);
+                text("Beta: " + this.mappedBetaM3.toFixed(1), this.posX, this.posY / 2);
+                text("Str90: " + this.mappedStr90M3.toFixed(1), this.posX, this.posY / 2 + lineSpace);
                 textAlign(RIGHT, CENTER);
                 text("BQ/M3", this.posX - 10, this.posY / 2 + lineSpace);
 
                 //M2
                 textAlign(LEFT, CENTER);
-                text("Beta: " + this.mappedBetaM2.toFixed(1), this.posX, this.posY / 2 * 3);
-                text("Cs137: " + this.mappedCs137M2.toFixed(1), this.posX, this.posY / 2 * 3 - lineSpace);
                 text("Str90: " + this.mappedStr90M2.toFixed(1), this.posX, this.posY / 2 * 3 - lineSpace * 2);
+                text("mR/h: " + this.microRoentgenPerHour.toFixed(1), this.posX, this.posY / 2 * 3 - lineSpace);
+                text("Beta: " + this.mappedBetaM2.toFixed(1), this.posX, this.posY / 2 * 3);
+                text("Cs137: " + this.mappedCs137M2.toFixed(1), this.posX, this.posY / 2 * 3 + lineSpace);
                 textAlign(RIGHT, CENTER);
                 text("BQ/M2", this.posX - 10, this.posY / 2 * 3 - lineSpace);
                 pop();

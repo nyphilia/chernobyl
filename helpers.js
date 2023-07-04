@@ -51,7 +51,7 @@ class Helper
         textAlign(CENTER);
         textSize(valueSize);
         text("Jahr: " + this.year, this.posX, this.textY);
-        text(this.value, this.posX, this.posY + this.rValue / 1.6 + this.width * 20);
+        text(this.value, this.posX, this.posY + this.rValue / 1.6 + this.width * 10);
         textSize(descriptionSize);
         text("Anzahl der Hilfskraefte, die beim Aufraeumen der Unfallstelle halfen", width / 2, height / 15)
         noStroke();

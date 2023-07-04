@@ -38,7 +38,7 @@ class Radiation
         this.unit == "BQ/M3" && this.previousUnit == "BQ/M3" && mouseY < this.posY && mouseX > this.previousX && mouseX < this.posX)
         {
             stroke(255, 20, 1);
-            line(this.posX, this.posY, this.posX, height/4)
+            line(this.posX, this.posY, this.posX, height/4+lineSpace*3-10);
         }
 
        

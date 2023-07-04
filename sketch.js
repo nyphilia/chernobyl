@@ -14,7 +14,7 @@ let ukraineHovered = false;
 let ukraineClicked = false;
 let helperHovered = false;
 let timeOutID;
-let inactivity = true;
+let inactivity = false;
 
 // FONT STUFF
 let font;
@@ -119,7 +119,7 @@ function draw()
       {
         // noStroke();
         stroke('black');
-        fill(0, 25, 242);
+        fill(0, 100, 2552);
         textSize(descriptionSize);
         textAlign(CENTER, CENTER);
         text("Faelle von Schilddruesenkrebs pro 100.000 Menschen", width / 2, height / 15);
@@ -244,7 +244,7 @@ function startTimer()
 // INACTIVITY TOGGLE
 function goInactive()
 {
-  inactivity = true;
+  inactivity = false;
 }
 
 function windowResized() 
