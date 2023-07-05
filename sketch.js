@@ -14,7 +14,7 @@ let ukraineHovered = false;
 let ukraineClicked = false;
 let helperHovered = false;
 let timeOutID;
-let inactivity = false;
+let inactivity = true;
 
 // FONT STUFF
 let font;
@@ -41,7 +41,7 @@ function setup()
 {
   cursor(ARROW);
   createCanvas(windowWidth, windowHeight/*, SVG*/);
-  pixelDensity(1.0);
+  pixelDensity(3.5);
   // radiationPosY = height / 12 * 4.5;
   radiationPosY = height / 2;
   ratesPosY = height / 12 * 9;
@@ -238,13 +238,13 @@ function mouseMoved()
 
 function startTimer()
 {
-  timeoutID = window.setTimeout(goInactive, 30000);
+  timeoutID = window.setTimeout(goInactive, 60000);
 }
 
 // INACTIVITY TOGGLE
 function goInactive()
 {
-  inactivity = false;
+  inactivity = true;
 }
 
 function windowResized() 

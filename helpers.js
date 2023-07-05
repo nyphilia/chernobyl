@@ -27,7 +27,7 @@ class Helper
         // this.d = this.d > 50 ? this.d = 50 : this.d = this.d;
         // this.d = map(this.d, 0, 50, 50,5);
 
-        if (mouseX > this.posX - this.width * 25 && mouseX < this.posX + this.width * 25 && mouseY > this.posY && mouseY < this.posY + this.rValue / 1.6 + 10)
+        if (mouseX > this.posX - this.width * 25 && mouseX < this.posX + this.width * 25 && mouseY > this.posY && mouseY < this.posY + this.rValue / 1.6 + 50)
         {
             helperHovered = true;
         }

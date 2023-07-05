@@ -177,8 +177,8 @@ class Ukraine
             {
                 push();
                 stroke(255, 20, 1, 150);
-                line(this.posX, this.clickedPosY, this.posX, this.posY / 2+50);
-                line(this.posX, this.clickedPosY, this.posX, this.posY / 2 * 3-50);
+                line(this.posX, this.clickedPosY, this.posX, this.posY / 2+55);
+                line(this.posX, this.clickedPosY, this.posX, this.posY / 2 * 3-55);
                 noStroke();
                 fill(255, 20, 1, 255);
                 // fill(255, 255, 255, 255);
@@ -215,7 +215,7 @@ class Ukraine
         { // We only draw hover quad when it's not in clicked state
             push();
             noStroke();
-            fill(255, 20, 1, 5); // Color when hovered (change as needed)
+            fill(255, 20, 1, 3); // Color when hovered (change as needed)
 
             quad(this.previousX, this.posY - this.previousMappedCs137M3,
                 this.previousX, this.posY + this.previousMappedCs137M3,

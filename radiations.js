@@ -66,7 +66,7 @@ class Radiation
 
             if (mouseY < this.posY && mouseX > this.previousX && mouseX < this.posX)
             {
-                text("UK: " + this.value.toFixed(1), this.posX, height / 4 + lineSpace * 2);
+                text("UK: " + this.value.toFixed(1), this.posX, height / 4);
             }
         }
 
@@ -115,7 +115,7 @@ class Radiation
             textSize(valueSize);
             if (mouseY < this.posY && mouseX > this.previousX && mouseX < this.posX)
             {
-                text("Belgien: " + this.value.toFixed(1), this.posX, height / 4);
+                text("Belgien: " + this.value.toFixed(1), this.posX, height / 4 + lineSpace *2);
             }
         }
 
