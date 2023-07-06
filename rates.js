@@ -103,6 +103,7 @@ class Rate
                 if (this.country == 1)
                 {
                     text("Belarus: " + this.value, this.posX, height / 4 * 3 - lineSpace * 2);
+                    text(this.year, this.posX, height / 4 * 3 - lineSpace * 3)
                 }
                 else if (this.country == 2)
                 {

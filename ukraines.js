@@ -189,6 +189,7 @@ class Ukraine
                 textAlign(LEFT, CENTER);
                 text("Cs137: " + this.cs137M3Clicked.toFixed(1), this.posX, this.posY / 2 + lineSpace * 2);
                 text("Beta: " + this.mappedBetaM3.toFixed(1), this.posX, this.posY / 2);
+                text(this.year, this.posX, this.posY / 2 - lineSpace);
                 text("Str90: " + this.mappedStr90M3.toFixed(1), this.posX, this.posY / 2 + lineSpace);
                 textAlign(RIGHT, CENTER);
                 text("BQ/M3", this.posX - 10, this.posY / 2 + lineSpace);

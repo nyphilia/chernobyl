@@ -67,6 +67,7 @@ class Radiation
             if (mouseY < this.posY && mouseX > this.previousX && mouseX < this.posX)
             {
                 text("UK: " + this.value.toFixed(1), this.posX, height / 4);
+                text(this.year, this.posX, height / 4 - lineSpace);
             }
         }
 
