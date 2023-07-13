@@ -41,7 +41,7 @@ function setup()
 {
   cursor(ARROW);
   createCanvas(windowWidth, windowHeight/*, SVG*/);
-  pixelDensity(3.5);
+  pixelDensity(2);
   // radiationPosY = height / 12 * 4.5;
   radiationPosY = height / 2;
   ratesPosY = height / 12 * 9;
